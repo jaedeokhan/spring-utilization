@@ -1,10 +1,25 @@
 management:
+  info:
+    build:
+      java:
+        source: "${java.version}"
+        target: "${java.version}"
+      version: "${java.version}"
+    java:
+      version: "${java.version}"
+    properties:
+      java.runtime.name: "${java.runtime.name}"
+      java.runtime.version: "${java.runtime.version}"
+      java.specification.version: "${java.specification.version}"
+      os.name: "${os.name}"
+      os.version: "${os.version}"
+      os.arch: "${os.arch}"
   endpoint:
     shutdown:
       enabled: true
     health:
-#      show-details: always
       show-components: always
+#      show-details: always
   endpoints:
     web:
       exposure:
